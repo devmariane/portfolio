@@ -1,0 +1,337 @@
+@charset "utf-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+/* Apply these styles to your body and html */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* This will make the footer stick to the bottom */
+footer {
+    margin-top: auto;
+}
+header{
+    display: none;
+}
+
+.inicio{
+    padding-top: 80px;
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    background-image: linear-gradient( #34cbe9, #195968);
+    height: 600px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.541);
+}
+.textoinicio{
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: larger;
+    animation-name: slide;
+    animation-duration: 1s;
+    opacity: 0;
+    transform: translatex(-20px);
+    animation-fill-mode: forwards;
+}
+#ola2{
+    text-align: justify;
+}
+#ola{
+    text-align: center !important;
+}
+.contatoinicio{
+    display: none;
+}
+.perfil{
+    width: 200px;
+    height: 650px;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.perfil > img{
+    width: 250px;
+    height: auto;
+}
+
+#sobre{
+    gap: 20px;
+}
+#sobre > h2{
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #ff8800;
+}
+#sobre > p{
+    text-align: justify;
+    color: rgb(99, 100, 104);
+    font-family: "Roboto", sans-serif;
+    padding: 10px 20px 10px 20px;
+    text-indent: 15px;
+}
+.desenvolvendo > h2{
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #ff8800;
+    
+}
+.desenvolvendo{
+    margin-bottom: 30px;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 15px 0px 15px;
+    animation-name: descer;
+    animation-duration: 1s;
+    opacity: 0;
+    transform: translatey(-25px);
+    animation-fill-mode: forwards;
+}
+i{
+   font-size: 50px !important;
+}
+.soft{
+   background-color: #195a682d;
+   gap: 40px;
+}
+.soft > h2{
+    padding-top:25px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #ff8800;
+    padding-left: 10px;
+}
+.lista{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px ;
+}
+li{
+    text-align: justify;
+    color: rgb(99, 100, 104);
+    font-family: "Roboto", sans-serif;
+    padding: 10px 20px 10px 20px;
+}
+.educacao > h2{
+    padding-top:25px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #ff8800;
+    padding-left: 10px;
+}
+.educacao > p{
+    text-align: justify;
+    color: rgb(99, 100, 104);
+    font-family: "Roboto", sans-serif;
+    padding: 10px 20px 10px 20px;
+    text-indent: 15px;
+}
+.contato > h2{
+    padding-top:25px;
+    padding-bottom: 15px;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #ff8800;
+    padding-left: 10px;
+}
+.imagem{
+    display: flex;  
+    flex-direction: row;  
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+}
+.link > img{
+    width: 50px;
+    height: 50px;
+}
+footer > p{
+    margin-bottom: 0;
+   }
+@keyframes slide{
+    form{
+        opacity: 0;
+        transform: translateX(-20) ;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes descer{
+    form{
+        opacity: 0;
+        transform: translatey(-25) ;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+footer{
+    background-color: #195968;
+    color: white;
+    text-align: center;
+    padding: 0;
+    border: 0;
+}
+
+@media (min-width: 1200px)  {
+    header{
+        background-color: #346d79;
+        display: flex;
+        height: 45px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{
+        width: 350px;
+        height: 35px;
+        align-items: center;
+        display: flex;
+        margin-left: 25px;
+        color: white;
+        font-family: "Megrim", system-ui;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .logo > p{
+        margin:0;
+    }
+    .btn-primary{
+        background-color: #346d79!important;
+        border: #346d79!important;
+        margin-bottom: 5px!important;
+        
+    }
+    .btn-primary:hover{
+      background-color: #2a5f6a!important;
+    }
+    .btn-primary:active{
+        background-color: #2a5f6a!important;
+    }
+    .perfil > img{
+        width: 1200px;
+        height: auto;
+        margin-right: 100px;
+        margin-top: 50px;
+    } 
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    .inicio{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 70px;
+        height: 650px;
+    }
+    .inicio > p{
+        font-size: 25px;
+    }
+    .contatoinicio{
+        display: block;
+    }
+    .textoinicio{
+        width: 30%;
+    }
+    .perfil{
+        border-radius: 10px;
+        width: 400px;
+        height: 700px;
+        padding-right: 100px !important;
+    }
+    .sobreedesenvolvendo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 100px;
+        text-wrap: wrap;
+        height: 400px;
+    }
+    .icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 30px;
+    }
+    .icons > i{
+        font-size: 100px !important;
+        letter-spacing: 30px;
+    }
+    .informacoes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 100px;
+        text-wrap: wrap;
+        height: 400px;
+        flex-basis: 50%;
+    }
+    .cinza{
+         background-color: #195a682d;
+
+    }
+    .lista{
+        color: rgb(99, 100, 104);
+        font-family: roboto; 
+    }
+    .sessaoInformacao{
+        flex-basis: 50%;
+        padding: 50px;
+    }
+    .soft{
+        background: none;
+    }
+    ul{
+        border: black;
+    }
+   .listadois{
+    list-style: circle;
+    border: black;
+    list-style-position: inside;
+   }
+   .contato{
+    display: none;
+   }
+   ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+  }
+   footer{
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    border: 0;
+   }
+   footer > p{
+    margin-bottom: 0;
+   }
+}
